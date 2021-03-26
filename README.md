@@ -6,7 +6,7 @@
 
 
 ### Algorithms:
-[1. Sieve of Eratosthenes and extensions](https://codeforces.com/blog/entry/22229)
+[1. Sieve of Eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)[ & extensions](https://codeforces.com/blog/entry/22229)
 
 
 ----
