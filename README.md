@@ -16,7 +16,7 @@
 
 [1.Compare function in sort()](https://stackoverflow.com/questions/597532/how-do-you-structure-your-comparison-functions)
 
-   ```C++
+   ```c++
    //Example 1
       vector<pair<ll,char>>mp;
       bool cmp(pair<ll,char>&p1,pair<ll,char>&p2)
@@ -28,7 +28,7 @@
                 }
         sort(mp.begin(),mp.end(),cmp);
         
-        ```
+   ```
         
       
             
