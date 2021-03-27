@@ -30,44 +30,7 @@
         
         ```
         
-        ```C++
-        
-        //Example 2
-
-       
-   
-  
-       struct Car{
-    Manufacturer make;
-    ModelName model;
-    Year year;
-   };
-
-bool carLessThanComparator( const Car & car1, const Car & car2 ) {
-    if( car1.make < car2.make )
-        return true;
-
-    if ( car1.make != car2.make )
-        return false;
-
-    if( car1.model < car2.model )
-        return true;
-
-    if( car1.model != car2.model )
-        return false;
-
-    if( car1.year < car2.year )
-        return true;
-
-    return false;
-}
-```
-    
-   
-    
-    
-  ```
-    
+      
             
 
 
