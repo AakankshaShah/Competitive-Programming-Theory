@@ -32,7 +32,7 @@
    
    
    ```c++
-   \\Example 2
+   //Example 2
    struct Car{
  Manufacturer make;
  ModelName model;
