@@ -30,7 +30,7 @@
         
         ```
         
-        
+        ```C++
         
         //Example 2
 
@@ -61,6 +61,7 @@ bool carLessThanComparator( const Car & car1, const Car & car2 ) {
 
     return false;
 }
+```
     
    
     
