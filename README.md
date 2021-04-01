@@ -6,7 +6,23 @@
 
 
 ### Algorithms:
-[1. Sieve of Eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)[ & extensions](https://codeforces.com/blog/entry/22229)
+[1. Sieve of Eratosthenes](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)[ & extensions](https://codeforces.com/blog/entry/22229) <br /> 
+2.Storing 2 numbers in a single varibale:
+```c++
+n1=5;
+n2=7;
+z=10(greater than both n1 & n2)
+n1=n1+(n2%z)*z;
+
+To get n1:
+n1=n1%z;
+
+To get n2:
+n2=n2/z;
+```
+ 
+
+
 
 
 ----
