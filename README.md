@@ -10,6 +10,33 @@
 
 
 ----
+## Arrays:
+[1.Kadane's Algorithm](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)<br />
+[2.Merge without extra space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0/)
+
+  ```c++
+  int i=0,j=m-1;
+            while(i<n&&j>0)
+            {
+                if(arr1[i]>arr2[j])
+                {int tem=arr1[i];
+                arr1[i]=arr2[j];
+                arr2[j]=tem;
+                i++;
+                sort(arr2,arr2+m);
+                
+                }
+                else
+                {
+                i++;j--;
+                }
+            }
+  
+  ```
+
+
+
+----
 
 ## Miscellaneous:
 
