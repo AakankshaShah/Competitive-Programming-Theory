@@ -28,7 +28,7 @@ n2=n2/z;
 ----
 ## Arrays:
 [1.Kadane's Algorithm](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)<br />
-[2.Dutch National Flag](http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/)<br />
+[2.Dutch National Flag](http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/)[ and 3 way partioning](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)<br />
 [3.Merge without extra space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0/)
 
   ```c++
