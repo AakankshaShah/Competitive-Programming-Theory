@@ -28,7 +28,8 @@ n2=n2/z;
 ----
 ## Arrays:
 [1.Kadane's Algorithm](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)<br />
-[2.Merge without extra space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0/)
+[2.Dutch National Flag](http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/)<br />
+[3.Merge without extra space](https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0/)
 
   ```c++
   int i=0,j=m-1;
