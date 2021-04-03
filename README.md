@@ -20,6 +20,8 @@ n1=n1%z;
 To get n2:
 n2=n2/z;
 ```
+<br />
+
  
 
 
@@ -51,6 +53,7 @@ n2=n2/z;
   
   ```
 
+[4.Sliding Window](https://www.geeksforgeeks.org/window-sliding-technique/0)
 
 
 ----
