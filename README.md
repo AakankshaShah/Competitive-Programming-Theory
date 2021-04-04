@@ -53,7 +53,8 @@ n2=n2/z;
   
   ```
 
-[4.Sliding Window](https://www.geeksforgeeks.org/window-sliding-technique/0)
+[4.Sliding Window](https://www.geeksforgeeks.org/window-sliding-technique/0)<br />
+[5.Valley Peak Approach](https://dev.to/bebopvinh/leetcode-122-the-valleys-and-peaks-approach-5j9#:~:text=The%20first%20inner%20loop%20looks,before%20the%20price%20starts%20increasing&#41.&text=This%20one%20looks%20for%20a,difference%20to%20the%20max%20profit.)<br />
 
 
 ----
