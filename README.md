@@ -107,7 +107,18 @@ bool carLessThanComparator( const Car & car1, const Car & car2 ) {
 }
    ```
         
-      
+ <br/>
+ 
+ 
+ ----
+ ## Conceptual Questions
+ [Maximum sum subarray removing at most one element](https://www.geeksforgeeks.org/maximum-sum-subarray-removing-one-element/#:~:text=Given%20an%20array%2C%20we%20need,sum%20subarray%20by%20removing%20%2D4.)
+ 
+ 
+ <br/>
+ 
+ 
+ ----
             
 
 
