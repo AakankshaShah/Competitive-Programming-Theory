@@ -67,7 +67,7 @@ n2=n2/z;
    ```c++
    //Example 1
       vector<pair<ll,char>>mp;
-      bool cmp(pair<ll,char>&p1,pair<ll,char>&p2)
+      bool cmp(pair<ll,char> &p1,pair<ll,char> &p2)
                 {
                       if(p1.first!=p2.first)
                       return p1.first<p2.first;//Returning smaller value
