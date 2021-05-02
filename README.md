@@ -56,6 +56,39 @@ n2=n2/z;
 [4.Sliding Window](https://www.geeksforgeeks.org/window-sliding-technique/0)<br />
 [5.Valley Peak Approach](https://dev.to/bebopvinh/leetcode-122-the-valleys-and-peaks-approach-5j9#:~:text=The%20first%20inner%20loop%20looks,before%20the%20price%20starts%20increasing&#41.&text=This%20one%20looks%20for%20a,difference%20to%20the%20max%20profit.)<br />
 
+----
+
+## Strings
+[1.Permutations of a string](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)
+```c++
+	void permute(string a, int l, int r)
+{
+    // Base case
+    if (l == r)
+        ans.push_back(a);
+    
+    else
+    {
+        // Permutations made
+        for (int i = l; i <= r; i++)
+        {
+ 
+            // Swapping done
+            swap(a[l], a[i]);
+ 
+            // Recursion called
+            permute(a, l+1, r);
+ 
+            //backtrack
+            swap(a[l], a[i]);
+        }
+    }
+    
+   ```
+<br />
+![image](https://user-images.githubusercontent.com/55951533/116806306-aab6c880-ab49-11eb-91c7-cd14bd081452.png)
+
+    
 
 ----
 
