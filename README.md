@@ -21,6 +21,8 @@ To get n2:
 n2=n2/z;
 ```
 <br />
+3.No. of a digits in a number:
+floor(log b)+1 (if base is 10)
 
  
 
