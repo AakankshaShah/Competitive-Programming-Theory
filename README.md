@@ -155,6 +155,12 @@ bool carLessThanComparator( const Car & car1, const Car & car2 ) {
  
  
  ----
+ ## Extras
+ 1.[Fast Input](https://discuss.codechef.com/external-redirect/?url=https://stackoverflow.com/questions/1042110/using-scanf-in-c-programs-is-faster-than-using-cin)
+  ```c++
+  ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+  
+  ```
             
 
 
