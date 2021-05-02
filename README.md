@@ -86,7 +86,8 @@ n2=n2/z;
     
    ```
 <br />
-![image](https://user-images.githubusercontent.com/55951533/116806306-aab6c880-ab49-11eb-91c7-cd14bd081452.png)
+
+<img src="https://user-images.githubusercontent.com/55951533/116806306-aab6c880-ab49-11eb-91c7-cd14bd081452.png">
 
     
 
