@@ -147,6 +147,100 @@ bool carLessThanComparator( const Car & car1, const Car & car2 ) {
  
  
  ----
+ ## Graphs:
+ 1.Bridges(DFS TREE)
+
+```c++
+#include<stdio.h>
+#include<math.h>
+           second 
+
+ll dis[max5],vis[15];
+vector<ll> arr[15];
+ll timer=1;
+ll in[15],low[15];
+
+void dfs(ll node,ll par)
+{
+    vis[node]=1;
+    in[node]=low[node]=timer;
+    
+    timer++;
+    for(auto child:arr[node])
+    {//Checking for parent
+        if(child==par)
+        continue;
+        if(vis[child]==1)
+        {//back edge
+            low[node]=min(in[child],low[node]);
+            cout<<node<<"-"<<child<<"back edge\n";
+        }
+        else
+        {//forward edge
+            dfs(child,node);
+            if(low[child]>in[node])
+            {
+                cout<<node<<"-"<<child<<"is a bridge\n";
+
+            }
+            low[node]=min(low[child],low[node]);
+        }
+    }
+}
+
+
+
+int main () 
+{
+  
+ 
+ #ifndef ONLINE_JUDGE
+    // for getting input from input.txt
+    freopen("inputFile.txt", "r", stdin);
+    // for writing output to output.txt
+    freopen("outputFile.txt", "w", stdout);
+#endif
+    
+ios_base::sync_with_stdio (0);
+  
+ 
+cin.tie (0);
+  
+ 
+cout.tie (0);
+ll n,e,x,y;
+cin>>n;
+cin>>e;
+while(e--)
+{cin>>x>>y;
+arr[x].push_back(y);
+arr[y].push_back(x);
+
+
+}
+dfs(1,-1);
+
+
+
+  
+ 
+ 
+ 
+ 
+ 
+return 0;
+
+ 
+}
+
+```
+ 
+ 
+ 
+ <br/>
+ 
+ 
+ ----
  ## Conceptual Questions
  [Maximum sum subarray removing at most one element](https://www.geeksforgeeks.org/maximum-sum-subarray-removing-one-element/#:~:text=Given%20an%20array%2C%20we%20need,sum%20subarray%20by%20removing%20%2D4.)
  
@@ -156,7 +250,7 @@ bool carLessThanComparator( const Car & car1, const Car & car2 ) {
  
  ----
  ## Extras
- 1.[Fast Input](https://discuss.codechef.com/external-redirect/?url=https://stackoverflow.com/questions/1042110/using-scanf-in-c-programs-is-faster-than-using-cin)
+ [1.Fast Input](https://discuss.codechef.com/external-redirect/?url=https://stackoverflow.com/questions/1042110/using-scanf-in-c-programs-is-faster-than-using-cin)
   ```c++
   ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
   
