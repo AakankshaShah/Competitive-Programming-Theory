@@ -94,6 +94,140 @@ floor(log b)+1 (if base is 10)
     
 
 ----
+## Queue:
+1.Rotten Oranges:
+
+```c++
+
+class Solution {
+public:
+int N,M;
+ 
+ struct ele
+ {
+    int tf;
+    int x;
+    int y;
+ };
+
+ bool isSafe(int i,int j)
+ {
+    if(i>=0 && i<N && j>=0 && j<M)
+        return true;
+    return false;
+ }
+
+ bool orangeLeft(vector<vector<int>>& grid)
+ {
+    for(int i=0;i<N;i++)
+    {
+        for(int j=0;j<M;j++)
+        {
+            if(grid[i][j]==1)
+                
+                return true;
+                
+        
+               
+        }
+    }
+    return false;
+ }
+
+
+    int orangesRotting(vector<vector<int>>& grid) 
+    {queue<ele>q;
+ele temp;
+int ans=0;
+N=grid.size();
+M=grid[0].size();
+
+for(int i=0;i<N;i++)
+    {
+        for(int j=0;j<M;j++)
+        {if(grid[i][j]==2)
+            {
+                temp.tf=0;
+                temp.x=i;
+                temp.y=j;
+                q.push(temp);
+            }
+
+        }
+    }
+    while(!q.empty())
+    {
+
+
+        temp=q.front();
+        int i=temp.x;
+        int j=temp.y;
+        //cout<<i<<j<<"ij\n";
+        if(isSafe(i-1,j)&&grid[i-1][j]==1)
+        {
+            grid[i-1][j]=2;
+            temp.tf++;
+            ans=max(ans,temp.tf);
+            temp.x--;
+            q.push(temp);
+            temp.tf--;
+            temp.x++;
+            //cout<<i-1<<j<<"i-1\n";
+
+        }
+         if(isSafe(i,j+1)&&grid[i][j+1]==1)
+        {
+            grid[i][j+1]=2;
+            temp.tf++;
+             ans=max(ans,temp.tf);
+            temp.y++;
+            q.push(temp);
+            temp.tf--;
+            temp.y--;
+            //cout<<i<<j+1<<"j+1\n";
+        }
+        
+         if(isSafe(i,j-1)&&grid[i][j-1]==1)
+        {
+            grid[i][j-1]=2;
+            temp.tf++;
+            ans=max(ans,temp.tf);
+            temp.y--;
+            q.push(temp);
+            temp.tf--;
+            temp.y++;
+            //cout<<i<<j-1<<"j-1\n";
+        }
+        
+         if(isSafe(i+1,j)&&grid[i+1][j]==1)
+        {
+            grid[i+1][j]=2;
+            temp.tf++;
+            ans=max(ans,temp.tf);
+            temp.x++;
+            q.push(temp);
+            temp.tf--;
+            temp.x--;
+            //cout<<i+1<<j<<"i+1\n";
+        }
+        
+        q.pop();
+
+    }
+     if(orangeLeft(grid)==true)
+    return -1;
+    else
+    return ans;
+        
+    }
+};
+
+ ```
+
+
+
+----
+
 
 ## Miscellaneous:
 
